@@ -1,0 +1,20 @@
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pyzmq
+  - pyyaml
+  - trollsift
+  - zeromq
+  - gisdata
+  - netifaces
+  - requests
+  - donfig
+  - urllib3
+  - certifi
+  - charset-normalizer
+  - git
+  - pip
+  - pip:
+    - posttroll
+    - geoserver-restconfig
