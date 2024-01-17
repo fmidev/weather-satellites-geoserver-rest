@@ -4,7 +4,7 @@ dependencies:
   - python=3.11
   - pyzmq
   - pyyaml
-  - trollsift
+  - trollsift=0.5.1
   - zeromq
   - gisdata
   - netifaces
@@ -16,5 +16,5 @@ dependencies:
   - git
   - pip
   - pip:
-    - posttroll
-    - geoserver-restconfig
+    - posttroll==1.10.0
+    - geoserver-restconfig==2.0.10
