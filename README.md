@@ -1,2 +1,1 @@
-# openshift-geoserver-rest
-Geoserver REST container recipe for OpenShift
+Container recipe for Geoserver REST for weather satellite processing chains
