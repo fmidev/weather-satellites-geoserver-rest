@@ -18,7 +18,7 @@ RUN mkdir /opt/conda && \
     micromamba install -y -f /tmp/environment.yaml && \
     rm /tmp/environment.yaml && \
     # Needs to be installed after other packages
-    pip install git+https://github.com/fmidev/geoserver-rest.git@v0.9.1 && \
+    pip install git+https://github.com/fmidev/geoserver-rest.git@v0.9.1.1 && \
     pip cache purge && \
     # Remove git with all its dependencies
     micromamba remove -y git && \
