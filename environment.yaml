@@ -9,12 +9,12 @@ dependencies:
   - netifaces
   - pip
   - pip:
-    - geoserver-restconfig==2.0.10
-    - posttroll==1.10.0
-  - python=3.11
+    - geoserver-restconfig==2.0.12
+    - posttroll==1.11.0
+  - python=3.12
   - pyyaml
   - pyzmq
   - requests>=2.32.0
   - trollsift=0.5.1
-  - urllib3
+  - urllib3>=2.2.2
   - zeromq
