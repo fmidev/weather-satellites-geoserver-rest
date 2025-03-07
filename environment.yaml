@@ -10,7 +10,7 @@ dependencies:
   - pip
   - pip:
     - geoserver-restconfig==2.0.12
-    - posttroll==1.11.0
+    - posttroll==1.12.1
   - python=3.12
   - pyyaml
   - pyzmq
