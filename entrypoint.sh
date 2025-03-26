@@ -20,6 +20,7 @@ CLEANING_CYCLE=21600
 if [ -e /config/geoserver_posttroll_update.yaml ]; then
     /opt/conda/bin/posttroll_adder.py /config/geoserver_posttroll_update.yaml &
     child=$!
+    wait "$child"
 elif [ -e /config/geoserver_add_granule.yaml ]; then
     /opt/conda/bin/add_granule.py /config/geoserver_add_granule.yaml
 elif [ -e /config/geoserver_delete_old_granules.yaml ]; then
@@ -28,5 +29,3 @@ elif [ -e /config/geoserver_delete_old_granules.yaml ]; then
 	sleep $CLEANING_CYCLE
     done
 fi
-
-wait "$child"
