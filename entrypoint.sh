@@ -14,8 +14,11 @@ source /config/env-variables
 
 micromamba activate
 
-# Clean images every 6 hours
-CLEANING_CYCLE=21600
+# If cleaning cycle has not been defined in /config/env-variables,
+# use the default cycle of 15 minutes (900 seconds)
+if [ "$CLEANING_CYCLE" == "" ]; then
+    CLEANING_CYCLE=900
+fi
 
 if [ -e /config/geoserver_posttroll_update.yaml ]; then
     /opt/conda/bin/posttroll_adder.py /config/geoserver_posttroll_update.yaml &

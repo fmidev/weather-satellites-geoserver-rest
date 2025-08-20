@@ -25,7 +25,9 @@ see https://github.com/fmidev/geoserver-rest/
 ### Cleaning images from WMS layers
 
 The cleaning is run when the container is started, and approximately
-every 6 hours after that. This will later be made configurable.
+every 15 minutes after that. This repeat period is configurable by
+setting `CLEANING_CYCLE` environment variable to wanted amount of
+seconds in `/config/env-variables` file given to the container/pod.
 
 The configuration should be placed in
 `/config/geoserver_delete_old_granules.yaml` file. For actual
