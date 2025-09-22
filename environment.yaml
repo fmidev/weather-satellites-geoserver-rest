@@ -15,6 +15,6 @@ dependencies:
   - pyyaml
   - pyzmq
   - requests>=2.32.0
-  - trollsift=0.5.3
+  - trollsift=0.6.0
   - urllib3>=2.2.2
   - zeromq
