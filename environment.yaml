@@ -9,8 +9,8 @@ dependencies:
   - netifaces
   - pip
   - pip:
-    - geoserver-restconfig==2.0.14
-    - posttroll==1.13.1
+    - geoserver-restconfig==2.0.16
+    - posttroll==1.14.0
   - python=3.13
   - pyyaml
   - pyzmq
