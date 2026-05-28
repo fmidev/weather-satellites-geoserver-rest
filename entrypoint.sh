@@ -28,7 +28,7 @@ elif [ -e /config/geoserver_add_granule.yaml ]; then
     /opt/conda/bin/add_granule.py /config/geoserver_add_granule.yaml
 elif [ -e /config/geoserver_delete_old_granules.yaml ]; then
     while `true`; do
-	/opt/conda/bin/delete_old_granules_and_files.py /config/geoserver_delete_old_granules.yaml
-	sleep $CLEANING_CYCLE
+        /opt/conda/bin/delete_old_granules_and_files.py /config/geoserver_delete_old_granules.yaml
+        sleep $CLEANING_CYCLE
     done
 fi
